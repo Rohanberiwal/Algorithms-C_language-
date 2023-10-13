@@ -1,0 +1,47 @@
+Data Strctures and algorithms in java 
+Linear search 
+The algorithm uses simple searching technique , using one pointer , we can search if the target is in the array or not .  
+Average
+Time complexity -> O(N)
+Space complexity  -> O(1)
+Best and Worst  :
+best -> O(1) // target on the first index 
+worst -> O(N) // Item or the target is not found 
+
+Java algorithm  
+
+import java.uitl.*;
+class Main 
+{
+    public static void main(String args[])
+    {
+        int target  = 1   ;
+        size =  10 ;
+        int array[] = new int[size] ;
+//linear search begin here
+        for(int i  =0  ; i<size  ; i++)
+        {
+            if(target== array[i])
+            {
+                System.out.println("Element found") ;
+                
+            }
+        }
+       return -1 ;
+    }
+}
+
+Binary Search //Very important
+This is mainly used for the sorted array and not for the unsorted array .
+The array could be increasing or maybe decreasing unlike linear search were we can do searching wihtout the sorting 
+
+Some steps for the Bianry search  :
+1) First ensure the array is ascending or descensing and is a sorted one .  
+2) find the middle most array  . 
+3) check if the target elment is greater than the middle elemnt or not , then searcvh in the right else search in the left .  
+4) if the middle == target , return the index  .
+the mid elemnt can vbe founded using two pointer , one is the start and the next is the len(array) .
+return the index . 
+
+Time complexity is log(n)
+Space complexity is o(n)
